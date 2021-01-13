@@ -1,0 +1,9 @@
+<div>
+    <form #authform='ngForm' (ngSubmit)="verify(authform)">
+        <label>username</label>
+        <input type="text" id="user1" name="username" ngModel required/>
+        <label>password_baby</label>
+        <input type="password" id="pass1" name="password" ngModel required/>
+        <input type="submit" value="login" [disabled]="!authform.valid"/>
+    </form>
+</div>
